@@ -8,9 +8,6 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by DELL on 19-Feb-16.
- */
 public class PointCollector implements View.OnTouchListener {
 
     private List<Point> points = new ArrayList<Point>();
