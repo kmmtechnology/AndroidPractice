@@ -4,12 +4,10 @@ import android.graphics.Point;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-
 import java.util.ArrayList;
 import java.util.List;
-
+/* added comment */
 public class PointCollector implements View.OnTouchListener {
-
     private List<Point> points = new ArrayList<Point>();
     private PointCollectorListener pointCollectorListener;
 
