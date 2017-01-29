@@ -38,8 +38,8 @@ public class Database extends SQLiteOpenHelper {
 
           for(Point point:points){
                  ContentValues contentValues=new ContentValues();
-                 contentValues.put();
-                 db.insert();
+//                 contentValues.put();
+  //               db.insert();
 
 
 
