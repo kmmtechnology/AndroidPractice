@@ -7,10 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Point;
 
 import java.util.List;
+/*new commneds added */
 
-/**
- * Created by DELL on 19-Feb-16.
- */
 public class Database extends SQLiteOpenHelper {
 
     public Database(Context context) {
@@ -19,10 +17,8 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-      String sql="create table POINTS (ID INTEGER PRIMARY KEY, X INTEGER NOT NULL, Y INTEGER NOT NULL)";
-      db.execSQL(sql);
-
-
+        String sql = "create table POINTS (ID INTEGER PRIMARY KEY, X INTEGER NOT NULL, Y INTEGER NOT NULL)";
+        db.execSQL(sql);
     }
 
     @Override
@@ -30,24 +26,17 @@ public class Database extends SQLiteOpenHelper {
 
     }
 
-    public void storePoints(List<Point> points){
+    public void storePoints(List<Point> points) {
 
-          SQLiteDatabase db = getWritableDatabase();
-          db.delete("POINTS",null,null);
-          int i=0;
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("POINTS", null, null);
+        int i = 0;
 
-          for(Point point:points){
-                 ContentValues contentValues=new ContentValues();
+        for (Point point : points) {
+            ContentValues contentValues = new ContentValues();
 //                 contentValues.put();
-  //               db.insert();
-
-
-
-          }
-
-
-         ContentValues contentValues=new ContentValues();
-
-
+            //               db.insert();
+        }
+        ContentValues contentValues = new ContentValues();
     }
 }
